@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import Navbar from "./components/Nav"
-import './App.css'
-
+import Nav from "./components/Nav";
+import InputField from "./components/Input";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Navbar />
-      <h1>Hello World</h1>
+      <Nav name="Aamir Ullah Khan" position="Account" />
+
+      <div>
+        <InputField label="Name" />
+        <InputField label="Email" />
+        <InputField label="Password" />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
